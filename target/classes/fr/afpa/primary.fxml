@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.afpa.TableViewController">
    <children>
       <TableView prefHeight="400.0" prefWidth="414.0">
         <columns>
@@ -24,11 +23,11 @@
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
                   <Label prefHeight="18.0" prefWidth="224.0" text="First Name" />
-                  <TextField />
+                  <TextField fx:id="firstName" />
                   <Label prefHeight="18.0" prefWidth="190.0" text="Last Name" />
-                  <TextField />
+                  <TextField fx:id="lastName" />
                   <Label prefHeight="18.0" prefWidth="189.0" text="City" />
-                  <TextField />
+                  <TextField fx:id="city" />
                </children>
             </VBox>
             <ButtonBar prefHeight="40.0" prefWidth="200.0" />
