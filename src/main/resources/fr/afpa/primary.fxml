@@ -12,11 +12,11 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.afpa.TableViewController">
    <children>
-      <TableView prefHeight="400.0" prefWidth="414.0">
+      <TableView fx:id="personTable" prefHeight="400.0" prefWidth="414.0">
         <columns>
-          <TableColumn minWidth="-Infinity" prefWidth="135.2" text="First Name" />
-          <TableColumn prefWidth="135.2" text="Last Name" />
-            <TableColumn prefWidth="135.2" text="City" />
+          <TableColumn fx:id="columnFirstName" minWidth="-Infinity" prefWidth="135.2" text="First Name" />
+          <TableColumn fx:id="columnLastName" prefWidth="135.2" text="Last Name" />
+            <TableColumn fx:id="columnCity" prefWidth="135.2" text="City" />
         </columns>
       </TableView>
       <VBox prefHeight="400.0" prefWidth="197.0">
@@ -46,9 +46,9 @@
             <ButtonBar prefHeight="40.0" prefWidth="200.0" />
             <HBox alignment="TOP_RIGHT" prefHeight="189.0" prefWidth="192.0" spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#delate" prefHeight="26.0" prefWidth="68.0" text="Delete" />
-                  <Button mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="66.0" text="Save" />
-                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="66.0" text="Cancel" />
+                  <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="68.0" text="Delete" />
+                  <Button fx:id="save" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="66.0" text="Save" />
+                  <Button fx:id="cancel" alignment="CENTER" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="66.0" text="Cancel" />
                </children>
                <VBox.margin>
                   <Insets />

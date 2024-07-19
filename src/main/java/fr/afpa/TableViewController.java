@@ -1,6 +1,5 @@
 package fr.afpa;
 
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,16 +16,26 @@ import java.util.ResourceBundle;
 
 public class TableViewController implements Initializable {
 
-    @FXML private TextField firstName;
-    @FXML private TextField lastName;
-    @FXML private TextField city;
-    @FXML private Button save;
-    @FXML private Button cancel;
-    @FXML private Button delete;
-    @FXML private TableView<Person> personTable;
-    @FXML private TableColumn<Person, String> columnFirstName;
-    @FXML private TableColumn<Person, String> columnLastName;
-    @FXML private TableColumn<Person, String> columnCity;
+    @FXML
+    private TextField firstName;
+    @FXML
+    private TextField lastName;
+    @FXML
+    private TextField city;
+    @FXML
+    private Button save;
+    @FXML
+    private Button cancel;
+    @FXML
+    private Button delete;
+    @FXML
+    private TableView<Person> personTable;
+    @FXML
+    private TableColumn<Person, String> columnFirstName;
+    @FXML
+    private TableColumn<Person, String> columnLastName;
+    @FXML
+    private TableColumn<Person, String> columnCity;
 
     private ObservableList<Person> persons = FXCollections.observableArrayList();
 
@@ -65,10 +74,10 @@ public class TableViewController implements Initializable {
         columnLastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
         columnCity.setCellValueFactory(new PropertyValueFactory<>("city"));
 
-        persons.add(new Person("Josh", "Homme", "Joshua Tree"));
-        persons.add(new Person("Dave", "Grohl", "Warren"));
-        persons.add(new Person("Robert", "Trujillo", "Santa Monica"));
-
+        persons.add(new Person("Maria", "Santiago", "Berlin"));
+        persons.add(new Person("David", "Lacoste", "Lisbonne"));
+        persons.add(new Person("Mohamed", "Atmane", "Alger"));
+        persons.add(new Person("Sara", "Pierre", "Bordeaux"));
         personTable.setItems(persons);
     }
 }
